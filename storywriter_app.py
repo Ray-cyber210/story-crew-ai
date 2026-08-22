@@ -11,7 +11,7 @@ except (KeyError, FileNotFoundError):
     st.error("No API key found. Add GROQ_API_KEY in Settings -> Secrets.")
     st.stop()
 
-llm = LLM(model="groq/llama-3.3-70b-versatile", temperature=0.4)
+llm = LLM(model="groq/compound", temperature=1)
 
 MAX_RUNS = 5
 
